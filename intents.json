@@ -16,6 +16,255 @@
                 "Hey!",
                 "What can I do for you?"
             ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye",
+                "see you later",
+                "goodbye",
+                "take care",
+                "catch you later"
+            ],
+            "responses": [
+                "Goodbye!",
+                "See you later!",
+                "Take care!"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you?",
+                "what's your age?",
+                "tell me your age",
+                "age?"
+            ],
+            "responses": [
+                "I am a bot, so I don't have an age.",
+                "Age is just a number, and I don't have one!"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what's your name?",
+                "who are you?",
+                "tell me your name",
+                "your name?"
+            ],
+            "responses": [
+                "I'm your chatbot!",
+                "You can call me Chatbot.",
+                "I'm here to assist you. What's your name?"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what time is it?",
+                "can you tell me the time?",
+                "current time",
+                "time now?"
+            ],
+            "responses": [
+                "I'm not sure about the exact time, but I can help you with other things!",
+                "Check your device for the current time."
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": [
+                "what's your favorite food?",
+                "do you eat?",
+                "favorite food?",
+                "what food do you like?"
+            ],
+            "responses": [
+                "I don't eat, but I hear pizza is amazing!",
+                "I can't eat, but I can help you find recipes!"
+            ]
+        },
+        {
+            "tag": "stocks",
+            "patterns": [
+                "tell me about stocks",
+                "how's the stock market?",
+                "stock prices?",
+                "market trends?"
+            ],
+            "responses": [
+                "I'm not updated on the stock market, but you can check popular financial sites!",
+                "Stock trading can be complex. Let me know how I can help!"
+            ]
+        },
+        {
+            "tag": "shopping",
+            "patterns": [
+                "where can I shop?",
+                "online shopping?",
+                "recommend shopping sites",
+                "best shopping deals?"
+            ],
+            "responses": [
+                "You can try popular sites like Amazon or eBay!",
+                "Looking for deals? Check out your favorite online stores."
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "what's the weather like?",
+                "current weather?",
+                "is it raining?",
+                "tell me the weather"
+            ],
+            "responses": [
+                "I can't give real-time weather updates, but checking a weather app might help!",
+                "Look outside or use a weather app for the latest updates!"
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "tell me a joke",
+                "make me laugh",
+                "do you know any jokes?",
+                "funny joke?"
+            ],
+            "responses": [
+                "Why don't scientists trust atoms? Because they make up everything!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "I need help",
+                "can you help me?",
+                "assist me",
+                "help?"
+            ],
+            "responses": [
+                "Sure, let me know what you need help with.",
+                "I'm here to assist you. What's your question?"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "tell me the news",
+                "what's happening?",
+                "current events?",
+                "latest news?"
+            ],
+            "responses": [
+                "I don't have live news updates, but you can check a news website for the latest information!",
+                "Staying informed is great! Try a trusted news source."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "who won the game?",
+                "sports news?",
+                "latest sports update?",
+                "tell me about sports"
+            ],
+            "responses": [
+                "I can't give live updates, but you can check sports apps or websites!",
+                "Let me know which sport interests you!"
+            ]
+        },
+        {
+            "tag": "programming",
+            "patterns": [
+                "how do I learn programming?",
+                "what's the best way to code?",
+                "programming tips?",
+                "learn to code?"
+            ],
+            "responses": [
+                "Practice is key! Start with Python, it's beginner-friendly.",
+                "There are great online courses to learn programming. Codecademy and freeCodeCamp are good places to start."
+            ]
+        },
+        {
+            "tag": "compliment",
+            "patterns": [
+                "you're great",
+                "nice bot",
+                "I like you",
+                "you're helpful"
+            ],
+            "responses": [
+                "Thank you! That means a lot.",
+                "You're amazing too!"
+            ]
+        },
+        {
+            "tag": "favorite_color",
+            "patterns": [
+                "what's your favorite color?",
+                "do you like colors?",
+                "favorite color?",
+                "color preference?"
+            ],
+            "responses": [
+                "I like all colors equally, but I think blue is calming!",
+                "Every color has its charm!"
+            ]
+        },
+        {
+            "tag": "hobbies",
+            "patterns": [
+                "what are your hobbies?",
+                "do you have hobbies?",
+                "what do you like to do?",
+                "favorite pastime?"
+            ],
+            "responses": [
+                "I love helping people and learning new things!",
+                "Chatting with you is my favorite thing to do!"
+            ]
+        },
+        {
+            "tag": "languages",
+            "patterns": [
+                "what languages do you speak?",
+                "can you speak other languages?",
+                "languages?"
+            ],
+            "responses": [
+                "I primarily speak English, but I can help with translations if needed!",
+                "I stick to English for now, but I'm always learning!"
+            ]
+        },
+        {
+            "tag": "fun_fact",
+            "patterns": [
+                "tell me a fun fact",
+                "interesting fact?",
+                "fact about something?",
+                "fun fact?"
+            ],
+            "responses": [
+                "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old and still edible!",
+                "Here's a fun fact: Octopuses have three hearts!"
+            ]
+        },
+        {
+            "tag": "motivation",
+            "patterns": [
+                "give me motivation",
+                "inspire me",
+                "motivational quote?",
+                "uplift me?"
+            ],
+            "responses": [
+                "Believe in yourself! You’re capable of amazing things.",
+                "Every great journey starts with a single step. Keep going!"
+            ]
         }
     ]
 }
