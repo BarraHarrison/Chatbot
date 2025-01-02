@@ -62,3 +62,7 @@ training = np.array(training)
 
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
+
+model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+model.save('chatbot_model.model')
+print("Done!")
