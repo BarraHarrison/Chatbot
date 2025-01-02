@@ -5,21 +5,22 @@ import pickle
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
-import tensorflow as tf
+from tensorflow.keras.models import load_model
 
-# Load intents file
+# Load resources
 lemmatizer = WordNetLemmatizer()
 with open('intents.json') as file:
     intents = json.load(file)
 
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.model')
+model = load_model('chatbot_model.h5')
 
 # Functions
 def clean_up_sentence(sentence):
-    sentence_words = nltk.word_tokenize(sentence)
+    sentence_words = nltk.word_tokenize(sentence.lower())  # Convert to lowercase
     sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
+    return sentence_words
 
 def bag_of_words(sentence):
     sentence_words = clean_up_sentence(sentence)
@@ -41,3 +42,23 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
     return return_list
+
+def get_response(intents_list, intents_json):
+    if intents_list:
+        tag = intents_list[0]['intent']
+        for intent in intents_json['intents']:
+            if intent['tag'] == tag:
+                return random.choice(intent['responses'])
+    return "I'm not sure I understand. Can you rephrase?"
+
+# Main loop
+print("Chatbot is running! Type 'quit' to exit.")
+while True:
+    message = input("You: ")
+    if message.lower() == 'quit':
+        print("Goodbye!")
+        break
+
+    intents_list = predict_class(message)
+    response = get_response(intents_list, intents)
+    print(f"Chatbot: {response}")
